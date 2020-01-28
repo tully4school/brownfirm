@@ -13,24 +13,15 @@ function ControlledCarousel() {
     };
     return (
         <Carousel activeIndex={index} direction={direction} onSelect={handleSelect}>
-            <Carousel.Item className="w-50">
-                <img
-                    className="first-slide d-block w-100"
-                    src={SlideOne}
-                    alt="First slide"
-                />
+            <Carousel.Item className="w-100">
+                <div className="ci-one"></div>
                 <Carousel.Caption>
                     <h3>Comprehensive Legal Service That Works</h3>
                     {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item className="w-50">
-                <img
-                    className="d-block w-100"
-                    src={SlideTwo}
-                    alt="Second slide"
-                />
-
+            <Carousel.Item className="w-100">
+                <div className="ci-two"></div>
                 <Carousel.Caption>
                     <h3>We Protect You By Providing Proven Legal Services</h3>
                     {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}

@@ -1,13 +1,9 @@
+
 import React, { Component } from "react";
+import './ContactHome.css'
 import * as emailjs from "emailjs-com";
-import Header from "../Header/Header";
-import {
-    Button,
-    Form,
-    FormGroup,
-    Label,
-    Input
-} from "reactstrap";
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
 class ContactForm extends Component {
     state = {
         name: "",
@@ -46,58 +42,51 @@ class ContactForm extends Component {
     render() {
         return (
             <>
-                <div className='row'>
-                    <div className='col-md-12'>
-                        <Header span='projects-header' header='Reach Out' />
-                    </div>
-                </div>
+                <h3>Have A Question?</h3>
                 <Form
                     onSubmit={this.handleSubmit.bind(this)}
-                    className='m-2 m-md-5 px-md-5'
+                    className='m-2'
                 >
-                    <FormGroup controlId='formBasicEmail'>
-                        <Label className='text-muted'>Email address</Label>
-                        <Input
+                    <Form.Group controlId='formBasicEmail'>
+                        <Form.Control
                             type='email'
                             name='email'
                             value={this.state.email}
                             className='text-primary'
                             onChange={this.handleChange.bind(this, "email")}
-                            placeholder='luke.skywalker@emailaddress.com'
+                            placeholder='Email Address'
                         />
-                    </FormGroup>
-                    <FormGroup controlId='formBasicName'>
-                        <Label className='text-muted'>Name</Label>
-                        <Input
+                    </Form.Group>
+                    <Form.Group controlId='formBasicName'>
+                        <Form.Control
                             type='text'
                             name='name'
                             value={this.state.name}
                             className='text-primary'
                             onChange={this.handleChange.bind(this, "name")}
-                            placeholder='Luke Skywalker'
+                            placeholder='Name'
                         />
-                    </FormGroup>
-                    <FormGroup controlId='formBasicSubject'>
-                        <Label className='text-muted'>Subject</Label>
-                        <Input
+                    </Form.Group>
+                    <Form.Group controlId='formBasicSubject'>
+                        <Form.Control
                             type='text'
                             name='subject'
                             className='text-primary'
                             value={this.state.subject}
                             onChange={this.handleChange.bind(this, "subject")}
-                            placeholder='Reason For Message'
+                            placeholder='Phone Number'
                         />
-                    </FormGroup>
-                    <FormGroup controlId='formBasicMessage'>
-                        <Label className='text-muted'>Message</Label>
-                        <Input
+                    </Form.Group>
+                    <Form.Group controlId='formBasicMessage'>
+                        <Form.Control
                             type='textarea'
                             name='message'
                             className='text-primary'
                             value={this.state.message}
                             onChange={this.handleChange.bind(this, "message")}
+                            placeholder="message"
                         />
-                    </FormGroup>
+                    </Form.Group>
                     <Button variant='primary' type='submit'>
                         Submit
 					</Button>
@@ -107,3 +96,4 @@ class ContactForm extends Component {
     }
 }
 export default ContactForm;
+

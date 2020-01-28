@@ -2,6 +2,18 @@
     height: 25vw;
     width: 65vw !important;
 }
+.ci-one {
+    background-image:url("http://localhost:3000/static/media/slideone.e1b46d3d.jpg");
+    height: 25vw;
+    background-size: cover;
+    width: 100%;
+}
+.ci-two {
+    background-image: url("http://localhost:3000/static/media/slidetwo.0deb5ce4.jpg");
+    height: 25vw;
+    background-size: cover;
+    width: 100%;
+}
 .carousel-indicators {
     display: none;
 }
