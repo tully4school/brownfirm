@@ -1,0 +1,25 @@
+.link-card img {
+    box-shadow: 2px 3px 8px 1px black;
+    width: 100%;
+    border-radius: 7px;
+}
+.link-card img:hover {
+    box-shadow: none;
+}
+.card-label {
+	position: absolute;
+	bottom: 10%;
+	background: rgba(255,255,255,.6);
+	width: 97%;
+	padding: 1% 3%;
+}
+@media only screen and (max-width: 991px){
+    .card-label h3 {
+        font-size: 2vw;
+    }
+}
+@media only screen and (max-width: 767px){
+    .card-label h3 {
+        font-size: 5vw;
+    }
+}
