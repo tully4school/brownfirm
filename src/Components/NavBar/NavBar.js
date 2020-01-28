@@ -37,7 +37,9 @@ function NavBar() {
                 </Nav>
             </Navbar.Collapse>
             <div className="phone-number d-lg-none">
-                <h3 className="mb-0"><a className="tel" href="tel:703-828-0900">703-828-0900</a></h3>
+                <h3 className="mb-0 d-flex align-items-center">
+                    <a className="tel" href="tel:703-828-0900">703-828-0900</a>
+                </h3>
             </div>
         </Navbar>
     )

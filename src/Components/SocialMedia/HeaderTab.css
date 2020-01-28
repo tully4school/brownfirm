@@ -1,8 +1,12 @@
 .header-tab {
-    width: 24px;
-    height: 30px;
+    width: 27px;
+    height: 33px;
     background-color:#223c73;
     border-radius: 0 0 4px 4px;
     display: inline-flex;
-    margin-right: 10px;
+    margin-left: 10px;
+}
+svg:not(:root).svg-inline--fa {
+    color: white;
+    margin: 0 auto;
 }

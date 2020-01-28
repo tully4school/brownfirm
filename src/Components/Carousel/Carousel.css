@@ -1,0 +1,10 @@
+.carousel-item img {
+    height: 25vw;
+    width: 65vw !important;
+}
+.carousel-indicators {
+    display: none;
+}
+.carousel-caption {
+    color: #000;
+}
