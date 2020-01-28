@@ -1,0 +1,8 @@
+.header-tab {
+    width: 24px;
+    height: 30px;
+    background-color:#223c73;
+    border-radius: 0 0 4px 4px;
+    display: inline-flex;
+    margin-right: 10px;
+}
