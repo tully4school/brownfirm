@@ -12,7 +12,7 @@ function Home(props) {
     return (
         <>
             <div className="row">
-                <div className="col-lg-8">
+                <div className="col-lg-8 mb-5 mb-lg-0">
                     <Carousel />
                 </div>
                 <div className="col-lg-4">
