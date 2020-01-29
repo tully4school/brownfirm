@@ -61,9 +61,10 @@ class App extends Component {
             component={Home}
           />
         </main>
-        <div className="row"><div className="col-lg-12">
-          <Footer />
-        </div>
+        <div className="row mt-3">
+          <div className="col-lg-12">
+            <Footer />
+          </div>
         </div>
       </div>
     )

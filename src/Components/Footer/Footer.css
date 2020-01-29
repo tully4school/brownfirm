@@ -2,3 +2,21 @@ footer {
     background-color: #223c73;
     color: #fff;
 }
+@media only screen and (max-width: 991px) {
+    .copyright {
+        justify-content: center;
+    }
+    .address {
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .address p {
+        font-size: 2.6vw;
+    }
+}
+@media only screen and (max-width: 371px) {
+    .copyright p {
+        font-size: 4vw;
+    }
+}
