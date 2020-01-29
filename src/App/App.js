@@ -8,6 +8,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter, faFacebookF, faGooglePlusG, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import Home from "../Components/Home/Home"
+import Footer from "../Components/Footer/Footer"
 library.add(fab, faTwitter, faFacebookF, faGooglePlusG, faLinkedinIn)
 class App extends Component {
   constructor(props) {
@@ -37,7 +38,7 @@ class App extends Component {
                 <div className="row mt-3">
                   <div className="col-lg-12">
                     <h4 className="header-text">
-                      703-828-0900
+                      <a href="tel:703-828-0900" className="text-decoration-none text-dark">703-828-0900</a>
                     </h4>
                   </div>
                 </div>
@@ -60,6 +61,10 @@ class App extends Component {
             component={Home}
           />
         </main>
+        <div className="row"><div className="col-lg-12">
+          <Footer />
+        </div>
+        </div>
       </div>
     )
   }
