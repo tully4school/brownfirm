@@ -21,12 +21,20 @@
     color: #000;
     bottom: 40%;
 }
+@media only screen and (max-width: 991px) {
+.ci-one, .ci-two {
+    height: 35vw;
+    }
+}
 @media only screen and (max-width: 621px) {
     .carousel-caption h3 {
         font-size: 5vw;
     }
     .carousel-caption {
         bottom: -12px;
+    }
+    .ci-one, .ci-two {
+    height: 38vw;
     }
 }
 @media only screen and (max-width: 335px) {
