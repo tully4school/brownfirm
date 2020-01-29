@@ -53,7 +53,7 @@ class App extends Component {
             <NavBar />
           </div>
         </div>
-        <main className="m-5">
+        <main className="m-lg-5">
           <Route
             path='/'
             exact
