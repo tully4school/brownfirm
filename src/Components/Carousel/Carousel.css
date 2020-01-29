@@ -31,7 +31,7 @@
         font-size: 5vw;
     }
     .carousel-caption {
-        bottom: -12px;
+        top: 9%;
     }
     .ci-one, .ci-two {
     height: 38vw;
