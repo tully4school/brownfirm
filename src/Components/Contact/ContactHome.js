@@ -42,7 +42,7 @@ class ContactForm extends Component {
     render() {
         return (
             <>
-                <h3>Have A Question?</h3>
+                <h3 className="pl-1">Have A Question?</h3>
                 <Form
                     onSubmit={this.handleSubmit.bind(this)}
                     className='m-2'

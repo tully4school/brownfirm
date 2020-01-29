@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import './App.css';
 import Logo from "../images/brownlogo.png"
 import NavBar from "../Components/NavBar/NavBar"
@@ -8,6 +8,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter, faFacebookF, faGooglePlusG, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import Home from "../Components/Home/Home"
+import History from '../Components/History/History'
 import Footer from "../Components/Footer/Footer"
 library.add(fab, faTwitter, faFacebookF, faGooglePlusG, faLinkedinIn)
 class App extends Component {
@@ -55,11 +56,18 @@ class App extends Component {
           </div>
         </div>
         <main className="m-lg-5">
-          <Route
-            path='/'
-            exact
-            component={Home}
-          />
+          <Switch>
+            <Route
+              path='/'
+              exact
+              component={Home}
+            />
+            <Route
+              path='/:history'
+              exact
+              component={History}
+            />
+          </Switch>
         </main>
         <div className="row mt-3">
           <div className="col-lg-12">

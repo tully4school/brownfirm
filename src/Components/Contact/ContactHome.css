@@ -1,3 +1,8 @@
 #formBasicMessage {
     height: 5.5rem;
 }
+.side-contact {
+    border: 1px solid black;
+    padding: .7rem;
+    box-shadow: 1px 3px 4px 2px darkgrey;
+}

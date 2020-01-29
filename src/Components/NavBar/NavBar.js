@@ -1,14 +1,15 @@
 import React from 'react'
 import "./NavBar.css"
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
+import { Switch, Route, Link } from 'react-router-dom';
 function NavBar() {
     return (
         <Navbar expand="lg">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="m-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#home">Firm History</Nav.Link>
+                    <Nav.Link as={Link} to="/">Home</Nav.Link>
+                    <Nav.Link as={Link} to="/history">Firm History</Nav.Link>
                     <NavDropdown title="Criminal Defense" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
