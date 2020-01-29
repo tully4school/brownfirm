@@ -12,11 +12,22 @@
     background-color:  #314C88 !important;
 }
 .phone-number {
-    color: white;
+    color: #fff;
 }
-@media only screen and (min-width: 992px){
+@media only screen and (max-width: 1322px){
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    }
+}
+@media only screen and (min-width: 1323px){
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1179px){
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 1.2vw;
     }
 }
