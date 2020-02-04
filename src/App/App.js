@@ -9,6 +9,8 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter, faFacebookF, faGooglePlusG, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import Home from "../Components/Home/Home"
 import History from '../Components/History/History'
+import CriminalDefense from '../Components/CriminalDefense/CriminalDefense'
+import Felonies from '../Components/Felonies/Felonies'
 import Footer from "../Components/Footer/Footer"
 library.add(fab, faTwitter, faFacebookF, faGooglePlusG, faLinkedinIn)
 class App extends Component {
@@ -58,14 +60,24 @@ class App extends Component {
         <main className="m-lg-5">
           <Switch>
             <Route
-              path='/'
+              path='/:felonies-and-misdemeanors'
               exact
-              component={Home}
+              component={Felonies}
+            />
+            <Route
+              path='/:criminal-defense'
+              exact
+              component={CriminalDefense}
             />
             <Route
               path='/:history'
               exact
               component={History}
+            />
+            <Route
+              path='/'
+              exact
+              component={Home}
             />
           </Switch>
         </main>

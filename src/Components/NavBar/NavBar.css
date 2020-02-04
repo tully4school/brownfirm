@@ -1,6 +1,37 @@
 .navbar-expand-lg,
-.dropdown-menu {
+.dropdown-menu,
+.btn-primary,
+.btn-secondary {
     background-color: #223c73;
+}
+.btn-primary,
+.btn-secondary {
+    border-color: #223c73;
+}
+a.btn.btn-secondary,
+a.btn.btn-primary,
+button.btn.btn-primary {
+    text-align: left;
+}
+button.dropdown-toggle.dropdown-toggle-split.btn.btn-primary,
+button#dropdown-button-drop-right {
+    text-align: end;
+    max-width: 30px;
+    display: flex;
+    align-items: center;
+}
+.dropright.btn-group {
+        width: 100%;
+}
+.dropdown-menu {
+    padding: 0.5rem 0.13rem;
+    /* width: max-content; */
+}
+.dropright .dropdown-menu {
+    top: -3px;
+}
+.dropdown-item {
+    padding-left: 13px;
 }
 .nav-link, .dropdown-item {
     color: #fff !important;
@@ -8,8 +39,14 @@
 }
 .nav-link:hover, 
 .nav-item:hover, 
-.dropdown-item:hover {
+.dropdown-item:hover,
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-primary.focus, 
+.btn-primary:focus,
+.dropdown .btn-group:focus {
     background-color:  #314C88 !important;
+    border-color: #223c73 !important;
 }
 .phone-number {
     color: #fff;
