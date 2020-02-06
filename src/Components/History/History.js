@@ -6,7 +6,7 @@ import Contact from "../Contact/ContactHome"
 function History() {
     return (
         <div className="History">
-            <div className="side-contact float-right w-25 m-3">
+            <div className="side-contact float-md-right md-w-25 m-3">
                 <Contact />
             </div>
             <h1>Firm History</h1>

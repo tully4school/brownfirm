@@ -11,7 +11,7 @@ function NavBar() {
         <Navbar expand="lg">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="m-auto">
+                <Nav className="m-lg-auto">
                     <Nav.Link
                         as={Link}
                         to="/">

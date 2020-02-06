@@ -8,6 +8,10 @@
 .btn-secondary {
     border-color: #223c73;
 }
+a.btn {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
 a.btn.btn-secondary,
 a.btn.btn-primary,
 button.btn.btn-primary {
@@ -63,8 +67,18 @@ button#dropdown-button-drop-right {
     padding-left: 1.5rem;
     }
 }
-@media only screen and (min-width: 992px) and (max-width: 1179px){
-.navbar-expand-lg .navbar-nav .nav-link {
+@media only screen and (min-width: 992px) and (max-width: 1215px){
+.navbar-expand-lg .navbar-nav .nav-link,
+a.btn {
     font-size: 1.2vw;
+    }
+a.btn {
+    padding-right: .1vw
+}
+}
+@media only screen and (max-width: 600px) {
+    .navbar-nav .dropdown-menu{
+        position: absolute;
+        left: -11px;
     }
 }
